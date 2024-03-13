@@ -3,8 +3,8 @@ from .models.p1 import P1
 from .models.p2 import P2
 from .models.p3 import P3
 from .models.p4 import P4
-from .model.trans import Trans
-from .model.tso import TSO
+from .models.trans import Trans
+from .models.tso import TSO
 
 
 class P1Form(ModelForm):

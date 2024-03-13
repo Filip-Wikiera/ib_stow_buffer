@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+<nav>
+    <a href="{% url 'P1Page' %}">P1</a>
+    <a href="{% url 'P1Page' %}">P2</a>
+    <a href="{% url 'P1Page' %}">P3</a>
+    <a href="{% url 'P1Page' %}">P4</a>
+    <a href="{% url 'P1Page' %}">Trans</a>
+    <a href="{% url 'P1Page' %}">TSO</a>
+    <a href="{% url 'P1Page' %}">Total</a>
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>
