@@ -2,9 +2,9 @@
 
 {% block content %}
 <h1>{{ message }}</h1>
-<h1>P1</h1>
+<h1>P3</h1>
 <h1>Last modified: {{ last_count_date }}</h1>
-<form action="{% url 'P1Page' %}" method="post">
+<form action="{% url 'P3Page' %}" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
