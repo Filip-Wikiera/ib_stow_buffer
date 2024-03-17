@@ -78,6 +78,7 @@ def TotalPage(request):
         }
     now = datetime.now()
     context['buffor_now'] = TimePoint_Buffer(now)
+    context['trans_nyr'] = TimePoint_Buffer(now).trans_nyr()
 
     date_backtrack = now.replace(minute=0, second=0, microsecond=0)
     context['buffor_old'] = ""

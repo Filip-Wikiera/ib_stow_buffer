@@ -3,7 +3,11 @@
 {% block content %}
 <h1>{{ message }}</h1>
 
-<div id="current_count_table">{{ buffor_now|safe }}</div>
+<div id="current_count_table">
+    {{ trans_nyr|safe }}
+    {{ buffor_now|safe }}
+
+</div>
 <div id="older_count_tables">
     <center>{{ buffor_old|safe }}</center>
 </div>

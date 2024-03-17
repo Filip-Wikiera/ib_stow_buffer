@@ -85,6 +85,9 @@ input[type="submit"]:hover {
     padding: 20px;
     background-color: #000000;
 }
+.nyr{
+  float: inline-end;
+}
 #form_input{
   float: left;
   display: flex;
@@ -134,25 +137,29 @@ td {
 }
 
 table tr:nth-child(1) {
-  --row-color: #ffaaaa;
+  --row-color: #fc9191;
 }
 
 table tr:nth-child(2) {
-  --row-color: #ffffaa;
+  --row-color: #ffff70;
 }
 
 table tr:nth-child(3) {
-  --row-color: #aaffaa;
+  --row-color: #72ff72;
 }
 
 table tr:nth-child(4) {
-  --row-color: #aaffff;
+  --row-color: #68dfdf;
 }
 
 table tr:nth-child(5) {
-  --row-color: #aaaaff;
+  --row-color: #8383f3;
 }
 
 table tr:nth-child(6) {
   --row-color: #ff99ff;
+}
+
+table tr:nth-child(7) {
+  --row-color: #a1a1a1;
 }
