@@ -8,4 +8,5 @@ urlpatterns = [
     path('P4', views.P4Page, name='P4Page'),
     path('Trans', views.TransPage, name='TransPage'),
     path('TSO', views.TSOPage, name='TSOPage'),
+    path('Total', views.TotalPage, name='TotalPage'),
 ]

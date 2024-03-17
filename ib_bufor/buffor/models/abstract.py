@@ -23,7 +23,6 @@ class Area_Count(models.Model):
         date = self.time_stamp.strftime("%d/%m/%Y %H:%M")
         return f"{self.name} {date} Total: {self.total()}"
 
-
 class Floor(Area_Count):
 
     class Meta:
