@@ -1,12 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ message }}</h1>
-<h1>Trans</h1>
-<h1>Last modified: {{ last_count_date }}</h1>
-<form action="{% url 'TransPage' %}" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
+<div id="first_block">
+{{ message }}<br>
+Last modified: {{ last_count_date }} <br>
+</div>
+<div id = 'form_total'>
+    <div id = 'form_input'>
+        <form action="{% url 'TransPage' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </div>
+    <div id = 'form_clear'>
+        {{ form_clean|safe }}
+    </div>
+</div>
 </form>
 {% endblock %}

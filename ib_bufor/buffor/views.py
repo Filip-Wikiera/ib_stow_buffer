@@ -3,7 +3,15 @@ from .forms import P1Form, P2Form, P3Form, P4Form, TransForm, TSOForm
 from .models import P1, P2, P3, P4, Trans, TSO, closest_count
 from datetime import datetime, timedelta
 from .TimePoint_Buffer import TimePoint_Buffer
+import re
 
+def extract_id(input_string):
+    pattern = r'id="([^"]+)"'
+    match = re.search(pattern, input_string)
+    if match:
+        return match.group(1)
+    else:
+        return None
 
 # Create your views here.
 def generic_floor(request, model_cls, form_cls, template_name):
@@ -16,6 +24,12 @@ def generic_floor(request, model_cls, form_cls, template_name):
             "form": form,
             "last_count_date": last_count.time_stamp.strftime("%d/%m/%Y %H:%M")
         }
+
+    context["form_clean"] = ''
+
+    for x in form:
+        id = extract_id(str(x))
+        context["form_clean"] += f'<div class="clear_label" onclick=\'clear_form("{id}")\'>X</div><br>'
 
     if request.method == "POST":
         form = form_cls(request.POST)

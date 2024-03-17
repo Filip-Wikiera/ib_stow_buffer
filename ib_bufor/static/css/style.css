@@ -1,0 +1,158 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 50px;
+  padding: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 50px;
+  padding: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+a:hover {
+  background-color: #ccc;
+}
+
+.navbar .active {
+  background-color: #ff0000;
+}
+form {
+	color: white;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+}
+label{
+  font-size: 30px;
+}
+input[type=number] {
+  width: 55%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 25px;
+  text-align:right;
+}
+input[type=text] {
+  width: 70%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 25px;
+  text-align:right;
+}
+input[type="submit"] {
+  background-color: silver;
+  color: black;
+  width:30%;
+  height:60px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+}
+#first_block{
+  font-size: 30px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+}
+#form_total{
+  text-align: center;
+  color: white;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: #000000;
+}
+#form_input{
+  float: left;
+  display: flex;
+  align-items: right;
+  text-align: end;
+}
+#form_clear{
+  padding-top: 14px;
+  float: left;
+}
+.clear_label{
+  text-align: center;
+	padding: 7px;
+  padding-top: 13px;
+  margin-top: 6px;
+	width:45px;
+	height:45px;
+	color:white;
+	font-size:30px;
+	background-color:red;
+	display: inline-block;
+}
+table {
+  margin: 40px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+th {
+	width: 60px;
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+table tr {
+  background-color: var(--row-color);
+}
+
+td {
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+table tr:nth-child(1) {
+  --row-color: #ffaaaa;
+}
+
+table tr:nth-child(2) {
+  --row-color: #ffffaa;
+}
+
+table tr:nth-child(3) {
+  --row-color: #aaffaa;
+}
+
+table tr:nth-child(4) {
+  --row-color: #aaffff;
+}
+
+table tr:nth-child(5) {
+  --row-color: #aaaaff;
+}
+
+table tr:nth-child(6) {
+  --row-color: #ff99ff;
+}
